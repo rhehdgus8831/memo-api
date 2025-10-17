@@ -17,6 +17,7 @@ pipeline {
         stage('Bye Bye') {
             steps {
                 echo '—— Bye, Jenkinsfile! ——'
+                ls -al
                 cat src/main/resources/application.yml
             }
         }
